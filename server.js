@@ -8,6 +8,10 @@ const API_URL = 'https://itunes.apple.com';
 
 const axios = require('axios');
 
+const cors = require('cors');
+
+app.use(cors());
+
 app.get('/api/v1/musics', async (request, response) => {
 
     try {
